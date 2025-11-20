@@ -25,6 +25,7 @@ struct DebtScreenView: View {
             .opacity(isLoading && !hasInitiallyLoaded ? 0 : 1)
         }
         .edgesIgnoringSafeArea(.all)
+        .statusBarHidden(true)
         .onAppear {
             AppDelegate.orientationLock = .allButUpsideDown
         }
